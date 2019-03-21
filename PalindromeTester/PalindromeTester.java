@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 /**
  * Demonstrates the use of nested while loops.
  * 
@@ -21,9 +20,9 @@ public class PalindromeTester
       {
          System.out.println ("Enter a potential palindrome:");
          str = s.nextLine();
-
+         //
          left = 0;
-         right = str.length() - 1;
+         right = str.length() - 1; 
 
          while (str.charAt(left) == str.charAt(right) && left < right)
          {
@@ -37,7 +36,7 @@ public class PalindromeTester
             System.out.println ("That string is NOT a palindrome.");
          else
             System.out.println ("That string IS a palindrome.");
-
+         //
          System.out.println();
          System.out.print ("Test another palindrome (y/n)? ");
          another = s.nextLine();
