@@ -39,7 +39,7 @@ public class KochPanel extends JPanel
     //-----------------------------------------------------------------
     public void drawFractal (int order, int x1, int y1, int x5, int y5, Graphics page)
     {
-        Graphics2D g2 = (Graphics2D) page;
+        Graphics2D g2 = (Graphics2D) page; //
 
         int deltaX, deltaY, x2, y2, x3, y3, x4, y4;
 
