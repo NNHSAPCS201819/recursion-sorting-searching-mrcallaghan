@@ -10,7 +10,10 @@ public class MergeSorter
    */
    public static void sort(int[] a)
    {  
-      if (a.length <= 1) { return; }
+      if (a.length <= 1) // terminating condition
+        { 
+            return;
+        }
       int[] first = new int[a.length / 2];
       int[] second = new int[a.length - first.length];
       // Copy the first half of a into first, the second half into second
@@ -35,6 +38,7 @@ public class MergeSorter
    */
    private static void merge(int[] first, int[] second, int[] a)
    {  
+      // keep track of position in all 3 arrays
       int iFirst = 0; // Next element to consider in the first array
       int iSecond = 0; // Next element to consider in the second array
       int j = 0; // Next open position in a
