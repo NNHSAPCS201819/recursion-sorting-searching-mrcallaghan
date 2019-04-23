@@ -8,7 +8,7 @@ public class MergeSortDemo
 {  
    public static void main(String[] args)
    {  
-      int[] a = ArrayUtil.randomIntArray(20, 100);
+      int[] a = ArrayUtil.randomIntArray(8, 100); // change to 8 items to make debugger easier
       System.out.println(Arrays.toString(a));
 
       MergeSorter.sort(a);
